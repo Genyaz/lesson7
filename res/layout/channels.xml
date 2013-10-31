@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/channelList" android:layout_gravity="center" android:layout_weight="1"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/editAdd" android:layout_gravity="center" android:hint="Input new channel URL here."/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add new channel"
+            android:id="@+id/buttonAdd" android:layout_gravity="center" android:onClick="onAddChannelClick"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Feed"
+            android:id="@+id/buttonUpdate" android:layout_gravity="center" android:onClick="onUpdateClick"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editDelete" android:layout_gravity="center"
+            android:hint="Input the channel you want to delete here."/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete channel"
+            android:id="@+id/buttonDelete" android:layout_gravity="center" android:onClick="onDeleteChannelClick"/>
+</LinearLayout>
+
